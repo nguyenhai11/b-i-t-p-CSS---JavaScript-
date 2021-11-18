@@ -1,0 +1,38 @@
+--Giới thiệu CSS
+//CSS là ngôn ngữ chúng tôi sử dụng để tạo kiểu cho một trang web 
+--CSS là gì 
+.CSS là viết tắt của Cascading Style Sheets
+.CSS mô tả các phần tử HTML được hiển thị trên màn hình,giấy hoặc trong các phơng tiện khác 
+.CSS tiết kiệm rất nhiều trong công việc .Nó được kiểm soát bố cục trong nhiều trang web cùng một lúc
+.Các bảng định kiểu bên nogài được lưu trữ bên trong các tệp CSS
+
+
+---Tại sao sử dụng CSS
+ví dụ 
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: lightblue;
+}
+h1 {
+  color: white;
+  text-align: center;
+}
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+</style>
+</head>
+<body>
+<h1>My First CSS Example</h1>
+<p>This is a paragraph.</p>
+</body>
+</html>
+
+--CSS giai quyet van de lon 
+
+CSS tiết kiệm thời gian công việc 
+

@@ -1,0 +1,113 @@
+Bộ chọn CSS chọn các phần từ HTML bạn muốn tạo kiểu
+BỘ CHỌN CSS
+.Bộ chọn chia thành 5 loại
+.bộ chọn đơn giản
+.bộ chọn bộ kết hợp (chọn các phần tử dựa trên mối quan hệ cj thể giữa chúng )
+.Bộ chọm lớp giả(chọn phần tử dựa trên một trang nhất định )
+.bộ chọ thuộc tính(chọn các phần tử dựa trên một thuộc tính và giá trị của thuộc tính )
+
+=-= Bộ chọn phần tử CSS
+    dựa trên tên các phần tử HTML
+ví dụ :
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+text-align: center;
+color: red;
+}
+</style>
+</head>
+<body>
+<p> Co phai ban dang phan van khong biet mon nay cos kho hay khong.!!</p>
+<p id="para1">Me too!</p>
+<p>and me!</p>
+</body>
+</html>
+
+
+Bộ chọn id CSS
+Bộ chọn id sử dụng thuộc tính id của một phần tử HTML để chọn một phần tử cụ thể.
+Id của một phần tử là duy nhất trong một trang, do đó, bộ chọn id được sử dụng để chọn một phần tử duy nhất!
+Để chọn một phần tử có id cụ thể, hãy viết một ký tự băm (#), sau đó là id của phần tử.
+
+ví dụ :
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#para1{
+text-align: center;
+color: red;
+}
+</style>
+</hear>
+<body>
+<p id="para1">Hello world!</p>
+<p> yreee long time no see.</p>
+</body>
+</html>
+
+--Bộ chọn lớp CSS
+để chọn các phần tử với một lớp cụ thể hãy viết kí tự dấu châm (.)
+-- Ví dụ 
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.center {
+  text-align: center;
+  color: red;
+}
+</style>
+</head>
+<body>
+<h1 class="center">Red and center-aligned heading</h1>
+<p class="center">Red and center-aligned paragraph.</p> 
+
+</body>
+</html>
+
+-- Bộ chọn Khung 
+Bộ chọn phổ quát (*)chọn tất cả các phần tử trên html trang 
+ví dụ 
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+text-align: center;
+color: blue;
+}
+</style>
+</head>
+<body>
+<h1>Hello world!</h1>
+<p>Every element on the page will be affected by the style.</p>
+<p id="para1">Me too!</p>
+<p>And me!</p>
+</body>
+</html>
+
+--Công cụ nhóm CSS
+Bộ chọn nhóm chomnj tất cả các HTML cùng kiểu 
+Ví dụ 
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1, h2, p {
+  text-align: center;
+  color: red;
+}
+</style>
+</head>
+<body>
+<h1>Hello World!</h1>
+<h2>Smaller heading!</h2>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+

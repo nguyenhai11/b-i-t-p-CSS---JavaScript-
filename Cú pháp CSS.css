@@ -1,0 +1,25 @@
+--Cú pháp CSS
+Quy tắc CSS bao gồm một bộ phận và một khối khai báo
+..Cú pháp
+h1{color:blue; font-size:12px;}
+Bộ chọn trỏ đến phần tử HTML mà bạn muốn tạo kiểu.
+Khối khai báo chứa một hoặc nhiều khai báo được phân tách bằng dấu chấm phẩy.
+Mỗi khai báo bao gồm một tên thuộc tính CSS và một giá trị, được phân tách bằng dấu hai chấm.
+Nhiều khai báo CSS được phân tách bằng dấu chấm phẩy và các khối khai báo được bao quanh bởi dấu ngoặc nhọn.
+
+vi du
+<!DOCTYPE html>
+  <html>
+  <head>
+  <style>
+  p{
+    color: red;
+    text-align: center;
+  }
+  </style>
+    </head>
+      <body>
+      <p>Toi xin gioi thieu!</p>
+       <p>My name Nguyen Van Hai</p>
+</body>
+  </html>
