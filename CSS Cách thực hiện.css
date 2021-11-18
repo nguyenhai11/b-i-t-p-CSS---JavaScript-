@@ -1,0 +1,106 @@
+--Cách thêm CSS 
+Khi một trình duyệt đọc một biểu định kiểu , nó sẽ định dạng tài liệu HTML theo thông tin trong biểu định kiểu
+
+Ba cách để chèn CSS
+Có ba cách để chèn một biểu định kiểu:
+.CSS bên ngoài
+.CSS nội bộ
+.CSS nội tuyến
+
+=CSS bên ngoài 
+với bảng định kiểu bên ngoài , bạn có thể thay đổi giao diện của toàn bộ web chỉ bằng cách thay đổi một tệp
+Mỗi trang HTML phải bao gồm một tham chiếu đến toeẹp biểu định bên ngoài phần tử <link>
+bên trong phần đầu
+ Ví dụ 
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+</body>
+</html>
+
+Một biểu định kiểu bên ngoài có thể được viết trong bất kỳ trình soạn thảo văn bản nào và phải được lưu bằng phần mở rộng .css.
+tệp .css bên ngoài không được chứa bất kì thẻ HTML nào 
+đây là giao diện của tệp "mýtyle.css"
+
+body {
+  background-color: lightblue;
+}
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+
+--CSS Nội bộ 
+Một biểu định kiểu nội bộ có thể được sử dụng nếu một trang HTML có một kiểu duy nhất.
+Kiểu nội bộ được xác định bên trong phần tử <style>, bên trong phần đầu.
+
+ví dụ các kiểu nội bộ được xác định trong phần tử <style> bên trong phần <head> của trang HTML:
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+  background-color: linen;
+}
+h1 {
+  color: maroon;
+  margin-left: 40px;
+}
+</style>
+</head>
+<body>
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+</body>
+</html>
+
+--CSS Nội Tuyến 
+-Một kiểu nội tuyến có thể được sử dụng để áp dụng duy nhất cho một phần tử 
+Để sử dụng các kiểu nội tuyến, hãy thêm thuộc tính style vào phần tử có liên quan. Thuộc tính style có thể chứa bất kỳ thuộc tính CSS nào.
+<!DOCTYPE html>
+<html>
+<body>
+<h1 style="color:blue;text-align:center;">This is a heading</h1>
+<p style="color:red;">This is a paragraph.</p>
+</body>
+</html>
+
+--Nhiều trang tính kiểu dáng 
+.Nếu một số thuộc tính đã được xác định cho cùng một bộ chọn (phần tử) trong các biểu định kiểu khác nhau, thì giá trị từ biểu định kiểu đọc cuối cùng sẽ được sử dụng. 
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<style>
+h1 {
+  color: orange;
+}
+</style>
+</head>
+<body>
+<h1>This is a heading</h1>
+<p>The style of this document is a combination of an external stylesheet, and internal style</p>
+</body>
+</html>
+-- Thứ tự xếp tầng 
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<style>
+body {background-color: linen;}
+</style>
+</head>
+<body style="background-color: lavender">
+
+<h1>Multiple Styles Will Cascade into One</h1>
+<p>Here, the background color of the page is set with inline CSS, and also with an internal CSS, and also with an external CSS.</p>
+<p>Try experimenting by removing styles to see how the cascading stylesheets work (try removing the inline CSS first, then the internal, then the external).</p>
+
+</body>
+</html>
