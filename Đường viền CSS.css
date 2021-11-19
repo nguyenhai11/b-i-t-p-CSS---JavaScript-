@@ -1,0 +1,50 @@
+---Đường viền CSS
+Các border-stylequy định cụ thể sở hữu những loại biên giới để hiển thị.
+Các giá trị sau được cho phép:
+.dotted - Xác định một đường viền chấm
+.dashed - Xác định đường viền đứt nét
+.solid - Xác định một đường viền chắc chắn
+.double - Xác định đường viền kép
+.groove- Xác định đường viền có rãnh 3D. Hiệu ứng phụ thuộc vào giá trị màu viền
+.ridge- Xác định đường viền 3D. Hiệu ứng phụ thuộc vào giá trị màu viền
+.inset- Xác định đường viền in 3D. Hiệu ứng phụ thuộc vào giá trị màu viền
+.outset- Xác định đường viền ban đầu 3D. Hiệu ứng phụ thuộc vào giá trị màu viền
+.none - Xác định không có đường viền
+.hidden - Xác định một đường viền ẩn
+Các border-stylebất động sản có thể có từ một đến bốn giá trị (đối với biên giới hàng đầu, biên phải, biên giới phía dưới, và biên giới trái).
+
+ví dụ 
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
+</style>
+</head>
+<body>
+<h2>The border-style Property</h2>
+<p>This property specifies what kind of border to display:</p>
+<p class="dotted">A dotted border.</p>
+<p class="dashed">A dashed border.</p>
+<p class="solid">A solid border.</p>
+<p class="double">A double border.</p>
+<p class="groove">A groove border.</p>
+<p class="ridge">A ridge border.</p>
+<p class="inset">An inset border.</p>
+<p class="outset">An outset border.</p>
+<p class="none">No border.</p>
+<p class="hidden">A hidden border.</p>
+<p class="mix">A mixed border.</p>
+</body>
+</html>
