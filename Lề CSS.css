@@ -1,0 +1,123 @@
+--Lề CSS
+Các margin thuộc tính CSS được sử dụng để tạp không gian xung quanh các phần tử bên ngoài bất kì đường viền nào xác định 
+
+--Ký quỹ -Các mặt riêng lẻ 
+CSS có các thuộc tính để chỉ định lề cho mỗi bên của phần tử:
+margin-top
+margin-right
+margin-bottom
+margin-left
+Tất cả các thuộc tính lề có thể có các giá trị sau:
+tự động - trình duyệt tính toán lợi nhuận
+length - chỉ định lề bằng px, pt, cm, v.v.
+% - chỉ định lề tính bằng% chiều rộng của phần tử chứa
+inherit - chỉ định rằng lề phải được kế thừa từ phần tử mẹ
+ví dụ 
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  border: 1px solid black;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  background-color: lightblue;
+}
+</style>
+</head>
+<body>
+
+<h2>Using individual margin properties</h2>
+
+<div>This div element has a top margin of 100px, a right margin of 150px, a bottom margin of 100px, and a left margin of 80px.</div>
+</body>
+</html>
+
+--Ký quỹ - Thuộc tính tốc ký
+Để rút ngắn mã, có thể chỉ định tất cả các thuộc tính ký quỹ trong một thuộc tính.
+
+Các marginbất động sản là một tài sản viết tắt cho thuộc tính lề cá nhân sau đây:
+
+margin-top
+margin-right
+margin-bottom
+margin-left
+Vì vậy, đây là cách nó hoạt động:
+Nếu thuộc margintính có bốn giá trị:
+lề: 25px 50px 75px 100px;
+lề trên là 25px
+lề phải là 50px
+lề dưới là 75px
+lề trái là 100px
+
+ví dụ 
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  border: 1px solid black;
+  margin: 25px 50px 75px 100px;
+  background-color: lightblue;
+}
+</style>
+</head>
+<body>
+<h2>The margin shorthand property - 4 values</h2>
+<div>This div element has a top margin of 25px, a right margin of 50px, a bottom margin of 75px, and a left margin of 100px.</div>
+
+<hr>
+</body>
+</html>
+
+
+--Giá trị tự động
+Bạn có thể đặt thuộc tính margin thành căn autogiữa theo chiều ngang của phần tử bên trong vùng chứa của nó.
+Khi đó, phần tử sẽ chiếm chiều rộng được chỉ định và không gian còn lại sẽ được chia đều giữa lề trái và lề phải.
+Thí dụ
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  width: 300px;
+  margin: auto;
+  border: 1px solid red;
+}
+</style>
+</head>
+<body>
+<h2>Use of margin: auto</h2>
+<p>You can set the margin property to auto to horizontally center the element within its container. The element will then take up the specified width, and the remaining space will be split equally between the left and right margins:</p>
+<div>
+This div will be horizontally centered because it has margin: auto;
+</div>
+</body>
+</html>
+
+--Thu gọn ký quỹ
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  margin: 0 0 50px 0;
+}
+
+h2 {
+  margin: 20px 0 0 0;
+}
+</style>
+</head>
+<body>
+
+<p>In this example the h1 element has a bottom margin of 50px and the h2 element has a top margin of 20px. So, the vertical margin between h1 and h2 should have been 70px (50px + 20px). However, due to margin collapse, the actual margin ends up being 50px.</p>
+
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+
+</body>
+</html>
